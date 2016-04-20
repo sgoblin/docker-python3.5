@@ -17,11 +17,9 @@ RUN sed -i 's/archive.ubuntu.com/ubuntu.cs.utah.edu/' /etc/apt/sources.list \
     pkg-config \
     python3.5 \
     python3.5-dev \
+    python3-pip \
     && apt-get autoremove -y \
     && apt-get clean
-    
-ADD https://bootstrap.pypa.io/get-pip.py /tmp/
-RUN ln -s /usr/bin/python3.5 /usr/bin/python3 && python3 /tmp/get-pip.py && rm /tmp/get-pip.py
 
 RUN pip3 install -U virtualenv
 
