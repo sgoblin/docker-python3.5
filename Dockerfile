@@ -3,7 +3,7 @@
 FROM ubuntu:wily
 MAINTAINER Ryan M. <ryanm@redcow.club>
 
-RUN sed -i 's/archive.ubuntu.com/mirror.scalabledns.com/' /etc/apt/sources.list \
+RUN sed -i 's/archive.ubuntu.com/ubuntu.cs.utah.edu/' /etc/apt/sources.list \
     && sed -i 's/deb-src/#deb-src/' /etc/apt/sources.list \
     && apt-get update \
     && apt-get upgrade -y \
