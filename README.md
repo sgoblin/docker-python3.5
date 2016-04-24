@@ -1,7 +1,7 @@
 docker-python3.5
 ================
 
-My Ubuntu Wily Python 3.4 Docker base (sgoblin/python3.5)
+My Ubuntu Xenial Python 3.4 Docker base (sgoblin/python3.5)
 
 Use it as a base:
 
