@@ -1,6 +1,6 @@
 # Base python 3.5 build, inspired by
 # https://github.com/crosbymichael/python-docker/blob/master/Dockerfile
-FROM ubuntu:wily
+FROM ubuntu:xenial
 MAINTAINER Ryan M. <ryanm@redcow.club>
 
 RUN sed -i 's/archive.ubuntu.com/ubuntu.cs.utah.edu/' /etc/apt/sources.list \
@@ -15,8 +15,8 @@ RUN sed -i 's/archive.ubuntu.com/ubuntu.cs.utah.edu/' /etc/apt/sources.list \
     libpq-dev \
     make \
     pkg-config \
-    python3.5 \
-    python3.5-dev \
+    python3 \
+    python3-dev \
     python3-pip \
     && apt-get autoremove -y \
     && apt-get clean
