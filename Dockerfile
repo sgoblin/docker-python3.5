@@ -18,6 +18,7 @@ RUN sed -i 's/archive.ubuntu.com/mirror.us.leaseweb.net/' /etc/apt/sources.list 
     python3 \
     python3-dev \
     python3-pip \
+    aria2 \
     && apt-get autoremove -y \
     && apt-get clean
 
